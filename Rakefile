@@ -9,9 +9,9 @@ require 'gemfury/tasks'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "sidekiq-dynamic-queues"
+  gem.name = "sidekiq-pro-dynamic-queues"
   gem.homepage = "https://github.com/nedap/sidekiq-dynamic-queues"
-  gem.summary = "A sidekiq plugin for specifying the queues a worker pulls from with wildcards, negations, or dynamic look up from redis"
+  gem.summary = "A sidekiq (pro) plugin for specifying the queues a worker pulls from with wildcards, negations, or dynamic look up from redis"
   gem.email = "matt@conwaysplace.com"
   gem.authors = ["Matt Conway"]
   gem.version = Sidekiq::DynamicQueues::VERSION
