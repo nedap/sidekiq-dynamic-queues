@@ -35,6 +35,7 @@ Gem::Specification.new do |s|
     "lib/sidekiq/dynamic_queues/server.rb",
     "lib/sidekiq/dynamic_queues/server/views/dynamicqueue.erb",
     "lib/sidekiq/dynamic_queues/version.rb",
+    "sidekiq-pro-dynamic-queues.gemspec",
     "spec/queues_spec.rb",
     "spec/redis-test.conf",
     "spec/server_spec.rb",
