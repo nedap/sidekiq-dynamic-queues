@@ -73,7 +73,7 @@ module Sidekiq
       # list for a key with
       # Sidekiq::DynamicQueues::Attributes.set_dynamic_queue(key, ["q1", "q2"]
       #
-      def expand_queues(queues)
+      def expand_queues(queues, add_queue_prefix=true)
         queue_names = queues.dup
 
         real_queues = Sidekiq::Queue.all.map(&:name)
@@ -109,7 +109,11 @@ module Sidekiq
           end
         end
 
-        return matched_queues.collect { |q| "queue:#{q}" }.uniq.sort
+        if add_queue_prefix
+          return matched_queues.collect { |q| "queue:#{q}" }.uniq.sort
+        else
+          return matched_queues.uniq.sort
+        end
       end
 
     end
