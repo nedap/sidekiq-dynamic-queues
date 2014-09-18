@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Matt Conway"]
-  s.date = "2014-05-01"
+  s.date = "2014-09-18"
   s.email = "matt@conwaysplace.com"
   s.extra_rdoc_files = [
     "LICENSE",
@@ -32,6 +32,7 @@ Gem::Specification.new do |s|
     "lib/sidekiq-pro-dynamic-queues.rb",
     "lib/sidekiq/dynamic_queues/attributes.rb",
     "lib/sidekiq/dynamic_queues/fetch.rb",
+    "lib/sidekiq/dynamic_queues/reliable_fetch.rb",
     "lib/sidekiq/dynamic_queues/server.rb",
     "lib/sidekiq/dynamic_queues/server/views/dynamicqueue.erb",
     "lib/sidekiq/dynamic_queues/version.rb",
