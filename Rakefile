@@ -15,7 +15,8 @@ Jeweler::Tasks.new do |gem|
   gem.summary = "A sidekiq (pro) plugin for specifying the queues a worker pulls from with wildcards, negations, or dynamic look up from redis"
   gem.email = "matt@conwaysplace.com"
   gem.authors = ["Matt Conway", "Andre Foeken"]
-  gem.version = "0.7.0"
+  gem.version = "0.8.0"
+  gem.add_dependency "sidekiq-pro", ">= 2.0.0"
   # dependencies defined in Gemfile
 end
 

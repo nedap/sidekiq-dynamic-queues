@@ -1,7 +1,6 @@
 require 'celluloid'
 require 'sidekiq/util'
 require 'sidekiq/fetch'
-require 'sidekiq/pro/reliable_fetch'
 
 module Sidekiq
   module DynamicQueues
